@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>News Item</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+	<script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+	<link rel="stylesheet" href="styles/bootstrap.vertical-tabs.css">
+
+	<link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+
+<!-- Template this out later -->
+<nav class="navbar navbar-light">
+	<div class="container-fluid">
+		<ul class="nav navbar-nav">
+			<li><a href="home.html"><img src="images/cic_logo_1.png"></a></li>
+			<li><a href="#"><img src="images/logo_CICAward_UPDATE.png"></a></li>
+			<li class="dropdown">
+				<a class="dropdown-toggle" data-toggle="dropdown" href="#">About<span class="caret"></span></a>
+				<ul class="dropdown-menu">
+					<li><a href="about.html#objective_s">Objectives</a></li>
+					<li><a href="about.html#organising_committee">Organising Committee</a></li>
+					<li><a href="about.html#technical_committee">Technical Committee</a></li>
+					<li><a href="about.html#winner_list">Winner List</a></li>
+					<li><a href="about.html#sponsor_s">Sponsors</a></li>
+					<li><a href="about.html#supporting_organizations">Supporting Organizations</a></li>
+				</ul>
+			</li>
+			<li><a href="whats_new.html">What's New</a></li>
+			<li><a href="gallery.html">Gallery</a></li>
+			<li><a href="judging_panel.html">Judging Panel</a></li>
+			<li class="dropdown">
+				<a class="dropdown-toggle" data-toggle="dropdown" href="#">Application<span class="caret"></span></a>
+				<ul class="dropdown-menu">
+					<li><a href="application.html#category_s">Categories</a></li>
+					<li><a href="application.html#eligibility">Eligibility</a></li>
+					<li><a href="application.html#judging_criteria">Judging Criteria</a></li>
+					<li><a href="application.html#assessment_process">Assessment Process</a></li>
+					<li><a href="application.html#faq">FAQ</a></li>
+					<li><a href="application.html#application_form">Application form of organisations</a></li>
+					<li><a href="application.html#download">Download</a></li>
+					<li><a href="application.html#assessment_portal">Assessment Portal</a></li>
+				</ul>
+			</li>
+			<li><a href="key_dates.html">Key Dates</a></li>
+			<li><a href="contact.html">Contact Us</a></li>
+			
+			<li>
+				<form id="search-icon" class="navbar-form" action="#">
+					<div class="input-group">
+						<div class="input-group-btn">
+							<button class="btn btn-default" type="submit">
+								<i class="glyphicon glyphicon-search"></i>
+							</button>
+						</div>
+					</div>
+				</form>
+				<form id="search-real" class="navbar-form" action="search.html">
+					<div class="input-group">
+						<input type="text" class="form-control" placeholder="Search">
+						<div class="input-group-btn">
+							<button class="btn btn-default" type="submit">
+								<i class="glyphicon glyphicon-search"></i>
+							</button>
+						</div>
+					</div>
+				</form>
+			</li>
+			
+			<li class="dropdown" id="lang-opts">
+				<a class="dropdown-toggle" id="lang-label" data-toggle="dropdown" href="#"></a>
+				<ul class="dropdown-menu">
+					<li><a href="#">EN</a></li>
+					<li><a href="#">华</a></li>
+					<li><a href="#">華</a></li>
+				</ul>
+			</li>
+		</ul>
+	</div>
+</nav>
+
+<div class="main">
+	<div class="section" id="news_banner">
+		<div class="container">
+			<h1>What's New</h1>
+		</div>
+	</div>
+
+	<div class="section" id="news_item_content">
+
+		<div class="container">
+			<div class="row">
+				<div class="col-md-8 main-article">
+
+					<div class="row">
+						<div class="col-md-12">
+							<img class="feature-image" src="images/news1.png">
+						</div>
+					</div>
+
+					<div class="row">
+						<div class="col-md-12">
+							<h2 class="title">Choosing The Best Audio Player Software For Your Computer</h2>
+						</div>
+					</div>
+
+					<div class="row">
+						<div class="col-md-12">
+							<p class="date">30 Nov 2020</p>
+						</div>
+					</div>
+
+					<div class="row">
+						<div class="col-md-12">
+							<p class="excerpt">The CIC Sustainable Construction Award aims to recognise innovation and best practices in sustainable construction, we are delighted to receive more than 400 applications from organisations and their practitioners in 2018. The CIC Green Product Certification provides a certification platform for building and construction materials, it aims to transform Hong Kong into a greener built environment. To continuously nurture sustainable development and low carbon construction in our industry, CIC will launch the CIC Sustainable Construction Award 2020 and Green Product Certification on 19 Nov 2019.</p>
+						</div>
+					</div>
+
+					<div class="row">
+						<div class="col-md-12">
+							<a class="read-more" href="#">View more photos > </a>
+						</div>
+					</div>
+
+					<div class="row">
+						<div class="col-md-12 back-button-container">
+							<a class="btn green-pill btn-success" href="whats_new.html">Back</a>
+						</div>
+					</div>
+
+				</div>
+
+				<div class="col-md-4 side-articles">
+
+					<div class="row">
+						<div class="col-md-12">
+							<h2>Related news</h2>
+						</div>
+					</div>
+
+					<div class="row">
+						<a href="news_item.html">
+							<div class="col-md-4">
+								<img src="images/news2.png">
+							</div>
+							<div class="col-md-8">
+								<p><b>Help Finding Information Online</b></p>
+								<p class="date">30 Nov 2020</p>
+							</div>
+						</a>
+					</div>
+
+					<div class="row">
+						<a href="news_item.html">
+							<div class="col-md-4">
+								<img src="images/news3.png">
+							</div>
+							<div class="col-md-8">
+								<p><b>Addiction When Gambling Becomes A Problem</b></p>
+								<p class="date">30 Nov 2020</p>
+							</div>
+						</a>
+					</div>
+
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+	
+<!-- Template this out later -->
+<footer>
+	<div class="container">
+
+		<div class="row">
+
+			<div class="col-md-3">
+				<h5><a href="#">GET IN TOUCH</a></h5>
+
+				<div>
+					<p><a href="tel:0085231167217"><i class="fa fa-phone"></i> +852 3116 7217</a></p>
+				</div>
+
+				<div>
+					<p><a href="mailto:info@vtl-vtl.com"><i class="fa fa-envelope"></i> info@vtl-vtl.com</a></p>
+				</div>
+			</div>
+
+			<div class="col-md-3 col-md-offset-6">
+				<h5><a href="#">SUBSCRIBE TO OUR NEWS</a></h5>
+
+				<form id="footer-email" method="post" action="#">
+					<input type="text" placeholder="Your email" />
+					<input style="font-family: FontAwesome" value="&#xf138;" type="submit">
+				</form>
+			</div>
+
+		</div>
+		
+		<div class="row">
+
+			<div class="col-md-3">
+				<h6><a href="home.html">Home page</a></h6>
+			</div>
+
+			<div class="col-md-3">
+				<h6><a href="whats_new.html">What's New</a></h6>
+			</div>
+
+			<div class="col-md-3">
+				<h6><a href="judging_panel.html">Judging Panel</a></h6>
+			</div>
+
+			<div class="col-md-3">
+				<h6><a href="key_dates.html">Key Dates</a></h6>
+			</div>
+
+		</div>
+		
+		<div class="row">
+
+			<div class="col-md-3">
+				<h6><a href="about.html">About</a></h6>
+				<ul id="footer_about">
+					<li><a href="about.html#objective_s">Objectives</a></li>
+					<li><a href="about.html#organising_committee">Organising Committee</a></li>
+					<li><a href="about.html#technical_committee">Technical Committee</a></li>
+					<li><a href="about.html#winner_list">Winner List</a></li>
+					<li><a href="about.html#sponsor_s">Sponsors</a></li>
+					<li><a href="about.html#supporting_organizations">Supporting Organizations</a></li>
+				</ul>
+			</div>
+
+			<div class="col-md-3">
+				<h6><a href="gallery.html">Gallery</a></h6>
+			</div>
+
+			<div class="col-md-3">
+				<h6><a href="application.html">Application</a></h6>
+				<ul id="footer_application">
+					<li><a href="application.html#category_s">Categories</a></li>
+					<li><a href="application.html#eligibility">Eligibility</a></li>
+					<li><a href="application.html#judging_criteria">Judging Criteria</a></li>
+					<li><a href="application.html#assessment_process">Assessment process</a></li>
+					<li><a href="application.html#faq">FAQ</a></li>
+					<li><a href="application.html#application_form">Application Form of Organisation</a></li>
+					<li><a href="application.html#download">Download</a></li>
+					<li><a href="application.html#assessment_portal">Assessment Portal</a></li>
+				</ul>
+			</div>
+
+			<div class="col-md-3">
+				<h6><a href="contact.html">Contact us</a></h6>
+			</div>
+
+		</div>
+		
+		<hr>
+	
+		<div class="row">
+			<div class="col-md-8 col-sm-6 col-xs-12">
+				<p class="copyright-text">Copyright &copy; 2021 CIC Digitalisation Awards 2021.</p>
+				<p class="copyright-text">Created by <a href="#">VTL-Solutions Limited</a>.</p>
+			</div>
+
+			<div class="col-md-4 col-sm-6 col-xs-12">
+				<ul class="social-icons">
+					<li><a class="linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>  
+					<li><a class="google" href="#"><i class="fa fa-google-plus"></i></a></li>
+					<li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>
+					<li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
+					<li><a class="instagram" href="#"><i class="fa fa-instagram"></i></a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+	<button class="gototop"></button>
+
+</footer>
+
+<script src="scripts/scripts.js"></script>
+<script src="https://hammerjs.github.io/dist/hammer.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap-wizard/1.2/jquery.bootstrap.wizard.min.js"></script>
+
+</body>
+</html>

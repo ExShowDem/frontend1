@@ -1,0 +1,681 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Application Form</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+	<script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+	<link rel="stylesheet" href="styles/bootstrap.vertical-tabs.css">
+
+	<link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+
+<!-- Template this out later -->
+<nav class="navbar navbar-light">
+	<div class="container-fluid">
+		<ul class="nav navbar-nav">
+			<li><a href="home.html"><img src="images/cic_logo_1.png"></a></li>
+			<li><a href="#"><img src="images/logo_CICAward_UPDATE.png"></a></li>
+			<li class="dropdown">
+				<a class="dropdown-toggle" data-toggle="dropdown" href="#">About<span class="caret"></span></a>
+				<ul class="dropdown-menu">
+					<li><a href="about.html#objective_s">Objectives</a></li>
+					<li><a href="about.html#organising_committee">Organising Committee</a></li>
+					<li><a href="about.html#technical_committee">Technical Committee</a></li>
+					<li><a href="about.html#winner_list">Winner List</a></li>
+					<li><a href="about.html#sponsor_s">Sponsors</a></li>
+					<li><a href="about.html#supporting_organizations">Supporting Organizations</a></li>
+				</ul>
+			</li>
+			<li><a href="whats_new.html">What's New</a></li>
+			<li><a href="gallery.html">Gallery</a></li>
+			<li><a href="judging_panel.html">Judging Panel</a></li>
+			<li class="dropdown">
+				<a class="dropdown-toggle" data-toggle="dropdown" href="#">Application<span class="caret"></span></a>
+				<ul class="dropdown-menu">
+					<li><a href="application.html#category_s">Categories</a></li>
+					<li><a href="application.html#eligibility">Eligibility</a></li>
+					<li><a href="application.html#judging_criteria">Judging Criteria</a></li>
+					<li><a href="application.html#assessment_process">Assessment Process</a></li>
+					<li><a href="application.html#faq">FAQ</a></li>
+					<li><a href="application.html#application_form">Application form of organisations</a></li>
+					<li><a href="application.html#download">Download</a></li>
+					<li><a href="application.html#assessment_portal">Assessment Portal</a></li>
+				</ul>
+			</li>
+			<li><a href="key_dates.html">Key Dates</a></li>
+			<li><a href="contact.html">Contact Us</a></li>
+			
+			<li>
+				<form id="search-icon" class="navbar-form" action="#">
+					<div class="input-group">
+						<div class="input-group-btn">
+							<button class="btn btn-default" type="submit">
+								<i class="glyphicon glyphicon-search"></i>
+							</button>
+						</div>
+					</div>
+				</form>
+				<form id="search-real" class="navbar-form" action="search.html">
+					<div class="input-group">
+						<input type="text" class="form-control" placeholder="Search">
+						<div class="input-group-btn">
+							<button class="btn btn-default" type="submit">
+								<i class="glyphicon glyphicon-search"></i>
+							</button>
+						</div>
+					</div>
+				</form>
+			</li>
+			
+			<li class="dropdown" id="lang-opts">
+				<a class="dropdown-toggle" id="lang-label" data-toggle="dropdown" href="#"></a>
+				<ul class="dropdown-menu">
+					<li><a href="#">EN</a></li>
+					<li><a href="#">华</a></li>
+					<li><a href="#">華</a></li>
+				</ul>
+			</li>
+		</ul>
+	</div>
+</nav>
+
+<div class="main">
+	<div class="section" id="apply_form_banner">
+		<div class="container">
+			<h1>Application Form</h1>
+		</div>
+	</div>
+
+	<div class="section" id="apply_form_content">
+
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+
+					<form action="#" method="POST">
+					
+						<div id="outer_wizard">
+							<ul class="nav nav-tabs nav-justified">
+								<li><a href="#tab1" data-toggle="tab">Section 1</a></li>
+								<li><a href="#tab2" data-toggle="tab">Section 2</a></li>
+								<li><a href="#tab3" data-toggle="tab">Section 3</a></li>
+								<li><a href="#tab4" data-toggle="tab">Section 4</a></li>
+							</ul>
+
+							<div class="tab-content">
+								<div class="tab-pane" id="tab1">
+
+									<div class="form-heading">
+										<h2>Project of the year</h2>
+										<p class="center">*All fields are mandatory</p>
+										<p>1.	Applicant should be the project owner otherwise the application must be agreed by the project owner.</p>
+										<p>2.	Each Project can only has one application</p>
+									</div>
+				
+									<div class="form-meat">
+										<div class="form-group">
+											<label for="name">Entry Name:</label>
+											<input type="text" class="form-control" id="name" name="name">
+											<small id="nameHelp" class="form-text text-muted">Maximum 70 characters (with spaces). This name will be on the award if successful.</small>
+										</div>
+
+										<h4>Applicant’s contact details:</h4>
+
+										<div class="form-group inline">
+											<label for="name">Name:</label>
+											<input type="text" class="form-control" id="name" name="name">
+										</div>
+
+										<div class="form-group inline">
+											<label for="organisation">Organisation:</label>
+											<input type="text" class="form-control" id="organisation" name="organisation">
+										</div>
+
+										<div class="form-group inline">
+											<label for="email">Email:</label>
+											<input type="text" class="form-control" id="email" name="email">
+										</div>
+
+										<div class="form-group inline">
+											<label for="contact_number">Contact Number:</label>
+											<input type="text" class="form-control" id="contact_number" name="contact_number">
+										</div>
+
+										<div class="form-group inline">
+											<label for="address">Address:</label>
+											<input type="text" class="form-control" id="address" name="address">
+										</div>
+
+										<h4>Organisations to be credited:</h4>
+										<p>Please list the client related to this submission:</p>
+
+										<div class="form-group inline">
+											<label for="organisation">Organisation:</label>
+											<input type="text" class="form-control" id="organisation" name="organisation">
+										</div>
+
+										<div class="form-group inline">
+											<label for="contact_name">Contact Name:</label>
+											<input type="text" class="form-control" id="contact_name" name="contact_name">
+										</div>
+
+										<div class="form-group inline">
+											<label for="email">Email:</label>
+											<input type="text" class="form-control" id="email" name="email">
+										</div>
+
+										<p>Please list all organisations that should be credited in relation to this submission:</p>
+
+										<div class="form-group inline">
+											<label for="organisation">Organisation:</label>
+											<input type="text" class="form-control" id="organisation" name="organisation">
+										</div>
+
+										<div class="form-group inline">
+											<label for="contact_name">Contact Name:</label>
+											<input type="text" class="form-control" id="contact_name" name="contact_name">
+										</div>
+
+										<div class="form-group inline">
+											<label for="email">Email:</label>
+											<input type="text" class="form-control" id="email" name="email">
+										</div>
+
+										<br>
+
+										<div class="form-group inline">
+											<label for="organisation">Organisation:</label>
+											<input type="text" class="form-control" id="organisation" name="organisation">
+										</div>
+
+										<div class="form-group inline">
+											<label for="contact_name">Contact Name:</label>
+											<input type="text" class="form-control" id="contact_name" name="contact_name">
+										</div>
+
+										<div class="form-group inline">
+											<label for="email">Email:</label>
+											<input type="text" class="form-control" id="email" name="email">
+										</div>
+
+										<br>
+
+										<div class="form-group inline">
+											<label for="organisation">Organisation:</label>
+											<input type="text" class="form-control" id="organisation" name="organisation">
+										</div>
+
+										<div class="form-group inline">
+											<label for="contact_name">Contact Name:</label>
+											<input type="text" class="form-control" id="contact_name" name="contact_name">
+										</div>
+
+										<div class="form-group inline">
+											<label for="email">Email:</label>
+											<input type="text" class="form-control" id="email" name="email">
+										</div>
+
+										<br>
+
+										<div class="form-group inline">
+											<label for="organisation">Organisation:</label>
+											<input type="text" class="form-control" id="organisation" name="organisation">
+										</div>
+
+										<div class="form-group inline">
+											<label for="contact_name">Contact Name:</label>
+											<input type="text" class="form-control" id="contact_name" name="contact_name">
+										</div>
+
+										<div class="form-group inline">
+											<label for="email">Email:</label>
+											<input type="text" class="form-control" id="email" name="email">
+										</div>
+									</div>
+								</div>
+								<div class="tab-pane" id="tab2">
+									<div class="form-heading">
+										<h2>Project Details</h2>
+										<p class="center">*All fields are mandatory</p>
+										<p>1.	Applicant should be the project owner otherwise the application must be agreed by the project owner.</p>
+										<p>2.	Each Project can only has one application</p>
+									</div>
+				
+									<div class="form-meat">
+										<div class="form-group">
+											<label for="name">Project Name:</label>
+											<input type="text" class="form-control" id="name" name="name">
+										</div>
+
+										<div class="form-group">
+											<label for="location">Project Location:</label>
+											<input type="text" class="form-control" id="location" name="location">
+										</div>
+
+										<h4>Project Timescales or Phase:</h4>
+										<div class="row">
+											<div class="col-md-6">
+												<div class="form-group inline">
+													<label for="start">Start Date:</label>
+													<input type="date" class="form-control" id="start" name="start">
+												</div>
+											</div>
+											<div class="col-md-6">
+												<div class="form-group inline">
+													<label for="end">End Date:</label>
+													<input type="date" class="form-control" id="end" name="end">
+												</div>
+											</div>
+										</div>
+
+										<div class="form-group">
+											<label for="value">Project Contract Value:</label>
+											<input type="text" class="form-control" id="value" name="value">
+										</div>
+
+										<div class="form-group">
+											<label for="type">Type of Work:</label>
+											<input type="text" class="form-control" id="type" name="type" placeholder="(e.g. new build, refurb)">
+										</div>
+
+										<div class="form-group">
+											<label for="client">Type of Client:</label>
+											<input type="text" class="form-control" id="client" name="client" placeholder="(e.g. housing association, developer, gov. department)">
+										</div>
+
+										<div class="form-group">
+											<label for="product">Construction Product:</label>
+											<input type="text" class="form-control" id="product" name="product" placeholder="(e.g. school, housing, road)">
+										</div>
+
+										<div class="form-group">
+											<label for="area">Approx. m2:</label>
+											<input type="text" class="form-control" id="area" name="area">
+										</div>
+									</div>
+								</div>
+								<div class="tab-pane" id="tab3">
+									<div class="form-heading">
+										<h2>Organisation / Initiative Details</h2>
+										<p class="center">*All fields are mandatory</p>
+										<p>1.	Applicant should be the project owner otherwise the application must be agreed by the project owner.</p>
+										<p>2.	Each Project can only has one application</p>
+									</div>
+				
+									<div class="form-meat">
+										<div class="form-group">
+											<label for="initiative">Organisation / Initiative Name:</label>
+											<input type="text" class="form-control" id="initiative" name="initiative">
+										</div>
+
+										<div class="form-group">
+											<label for="location">Location:</label>
+											<input type="text" class="form-control" id="location" name="location">
+										</div>
+
+										<div class="form-group">
+											<label for="type">Type of Organization:</label>
+											<textarea class="form-control" id="type" name="type" rows="3" placeholder="(e.g. housing association, developer, government department, contractor, consultant)"></textarea>
+										</div>
+
+										<div class="form-group">
+											<label for="staff">Number of Staff:</label>
+											<input type="number" class="form-control" id="staff" name="staff">
+										</div>
+									</div>
+								</div>
+								<div class="tab-pane" id="tab4">
+									<div class="row">
+										<div class="col-md-offset-1 col-md-10" id="inner_wizard">
+
+											<h2>Your Submission</h2>
+											<p class="center">*All fields are mandatory</p>
+											<p>*If you are unable to insert images directly into the cell, please use space between each question to insert images.</p>
+				
+											<ul class="nav nav-tabs nav-justified circle-tabs">
+												<li id="part_a">
+													<div class="icon">
+														<img src="images/parta.png" />
+													</div>
+													<h5>Part A</h5>
+													<p class="center">Industry Impact (20%)</p>
+													<a href="#tab5" data-toggle="tab">Part A</a>
+												</li>
+												<li id="part_b">
+													<div class="icon">
+														<img src="images/partb.png" />
+													</div>
+													<h5>Part B</h5>
+													<p class="center">Innovation / Business Transformation (30%)</p>
+													<a href="#tab6" data-toggle="tab">Part B</a>
+												</li>
+												<li id="part_c">
+													<div class="icon">
+														<img src="images/partc.png" />
+													</div>
+													<h5>Part C</h5>
+													<p class="center">Benefits Realisation (50%)</p>
+													<a href="#tab7" data-toggle="tab">Part C</a>
+												</li>
+												<li id="part_d">
+													<div class="icon">
+														<img src="images/partd.png" />
+													</div>
+													<h5>Part D</h5>
+													<p class="center">Industry Impact (20%)</p>
+													<a href="#tab8" data-toggle="tab">Part D</a>
+												</li>
+											</ul>
+
+											<div class="tab-content">
+												<div class="tab-pane" id="tab5">
+													<p>* Please provide a clear summary of all key messages and aspects of the submission. This section will be used for marketing purposes. A clear and full answer ensures we showcase your project effectively. </p>
+
+													<div class="form-group">
+														<label for="intro">1.	Introduction of the project / organisation (maximum 250 words)</label>
+														<textarea class="form-control" id="intro" name="intro" rows="3"></textarea>
+														<p class="right"><small id="intro" class="form-text text-muted">0/250</small></p>
+													</div>
+
+													<div class="form-group">
+														<label for="think">2.	Why do you think this project stands out from the crowd? (maximum 250 words)</label>
+														<textarea class="form-control" id="think" name="think" rows="3"></textarea>
+														<p class="right"><small id="think" class="form-text text-muted">0/250</small></p>
+													</div>
+
+													<p><b>3.	Three winning facts about your submission.</b></p>
+
+													<div class="form-group inline">
+														<label for="one">I.</label>
+														<textarea class="form-control" id="one" name="one" rows="3"></textarea>
+													</div>
+
+													<div class="form-group inline">
+														<label for="two">II.</label>
+														<textarea class="form-control" id="two" name="two" rows="3"></textarea>
+													</div>
+
+													<div class="form-group inline">
+														<label for="three">III.</label>
+														<textarea class="form-control" id="three" name="three" rows="3"></textarea>
+													</div>
+
+													<p><b>Supporting information/documents:</b></p>
+
+												    <div id="drop_file_zone" ondrop="upload_file(event)" ondragover="return false">
+											            <p>
+											            	<i class="fa fa-upload"></i> 
+											            	Drag file here or 
+											            	<input type="button" value="Browse" onclick="file_explorer();">
+											            </p>
+											            <input type="file" id="selectfile" multiple>
+												    </div>
+												    <p class="right"><small class="form-text text-muted">(Max file size -- MB, allow types: .pdf, .jpg, .png, .mp4, ...)</small></p>
+
+												    <div class="upload-result success">
+												    	<p class="filename">filename.pdf</p>
+												    	<p class="message">File uploaded successfully</p>
+												    </div>
+												    <div class="upload-result ongoing">
+												    	<p class="filename">filename.pdf</p>
+												    	<progress></progress>
+												    </div>
+												    <div class="upload-result failure">
+												    	<p class="filename">filename.pdf</p>
+												    	<p class="message">Upload failed. Because ...</p>
+												    </div>
+												</div>
+												<div class="tab-pane" id="tab6">
+													<p>Identification of inventive new technology or innovative implementation of existing technology which represents a major advancement or development in improving and progressing upon the current practices.
+													<br>
+													Clear demonstration of what is original about the concept and the benefits of the innovation over existing methods.
+													<br>
+													Collaboration Points will be gained if the idea promoted collaboration/integration across specific parts of the business either internally or with 3rd party collaborative partners and project stakeholders. 
+													<br>
+													The submission maps out the before and after process improvements and clearly defines the core operating processes it will impact, made clear in terms of measurable results:</p>
+
+													<div class="form-group">
+														<label for="circumstances">1.	Describe the circumstances or challenges faced in relation to this entry. Provide an overview of the digital project and any collaborators, including the main challenge or trigger to this initiative, business objectives and value proposition (what quantifiable benefits the project was expected to deliver). (maximum 250 words)</label>
+														<textarea class="form-control" id="circumstances" name="circumstances" rows="3"></textarea>
+														<p class="right"><small id="circumstances" class="form-text text-muted">0/250</small></p>
+													</div>
+
+													<div class="form-group">
+														<label for="means">2.	How were digital tools implemented on the project to optimise construction processes or tasks? (Describe the unique features, the level of complexity and application of the implementation/s, e.g. level of digital integration and collaboration between stakeholders/disciplines/departments/other industry 4.0 solutions. How was each project deployed? Were there any gaps?) (maximum 250 words)</label>
+														<textarea class="form-control" id="means" name="means" rows="3"></textarea>
+														<p class="right"><small id="means" class="form-text text-muted">0/250</small></p>
+													</div>
+
+													<div class="form-group">
+														<label for="planning">3.	What was the organisation's structure and planning for the digital project? Describe the team management structure on the digital project and how it helped succeed? How did the organisation ensure that the personnel conducting the implementation were competent (on the basis of education, training and professional experience)? How were the necessary resources for the digital project secured? How did the organisation plan the project activities and to what extent did these activities contribute to meeting the project objectives? (maximum 250 words)</label>
+														<textarea class="form-control" id="planning" name="planning" rows="3"></textarea>
+														<p class="right"><small id="planning" class="form-text text-muted">0/250</small></p>
+													</div>
+
+													<div class="form-group">
+														<label for="achieve">4.	How has engagement across the project contributed to the achievement? What approaches have you used to collaborate up and down the supply chain to enable adoption? (maximum 250 words)</label>
+														<textarea class="form-control" id="achieve" name="achieve" rows="3"></textarea>
+														<p class="right"><small id="achieve" class="form-text text-muted">0/250</small></p>
+													</div>
+
+												</div>
+												<div class="tab-pane" id="tab7">
+													<p>The submission clearly outlines how a business has been transformed from the way they used to work through the adoption of digital processes or technologies. 
+													<br>
+													A thorough business case has been completed for this project, validating the success of the project with proven results supported by key output KPIs, which might include but not limited to:</p>
+
+													<ul>
+														<li>Process complexity reduction</li>
+														<li>Time improvement in completing the process</li>
+														<li>Cost improvements</li>
+														<li>Quality or safety improvements</li>
+														<li>Improved outputs from the process impacted</li>
+														<li>ROI of the digital tools adopted</li>
+														<li>Actual vs. targeted breakeven time for the digital tools</li>
+													</ul>
+
+													<p>Submission describes the competitive advantages, the relationship between cost and benefits and the economic desirability of the project.</p>
+												
+													<div class="form-group">
+														<label for="benefits">1.	How have outcomes and performance been evaluated and with what results? What were the quantifiable benefits in terms of better design and construction, enhanced communication and improved health and safety (Describe ALL tangible benefits provided by the digital implementation, such as impact on time, safety, quality or cost etc., for each different business segment (e.g. discipline, process or stakeholder) and quantify the level of impact. Provide evidence for each stated benefit such as any studies undertaken. Judges will consider: How many favourable results were reported? What was the level of each impact? How many different segments benefited? If evidence was provided to support each result)? (maximum 250 words)</label>
+														<textarea class="form-control" id="benefits" name="benefits" rows="3"></textarea>
+														<p class="right"><small id="benefits" class="form-text text-muted">0/250</small></p>
+													</div>
+
+													<div class="form-group">
+														<label for="impact">2.	How did the digital project impact Environment, Social and Governance (ESG) (What ESG factors were considered by the project, such as environmental based design, carbon or waste minimisation, health & safety, equality or transparency and what was the quantifiable impact on the local physical or social environment for each? Provide evidence to support each impact, such as any environmental studies made. Judges will consider: How many ESG factors were favourably impacted? What was the level of each impact and if evidence was provided to support each outcome)? (maximum 250 words)</label>
+														<textarea class="form-control" id="impact" name="impact" rows="3"></textarea>
+														<p class="right"><small id="impact" class="form-text text-muted">0/250</small></p>
+													</div>
+
+													<div class="form-group">
+														<label for="further_benefits">3.	How will your initiative benefit stakeholders beyond the construction stage and into the whole life cycle of the project? (maximum 250 words)</label>
+														<textarea class="form-control" id="further_benefits" name="further_benefits" rows="3"></textarea>
+														<p class="right"><small id="further_benefits" class="form-text text-muted">0/250</small></p>
+													</div>
+
+												</div>
+												<div class="tab-pane" id="tab8">
+
+													<p>Submission demonstrates its ability to be applicable and repeatable across the industry. The current and/or future benefits and advantages for the oil and gas industry are to be clear and distinguishable.</p>
+
+													<p>Show that the project is a commercially viable technology that is ready for market and for wider adoption and application.</p>
+
+													<p>Submission describes the significant industry contribution this project/product/service holds and explains how the industry is/will be impacted locally, regionally and/or globally.</p>
+
+													<div class="form-group">
+														<label for="integration">1.	How did the digital tools adopted foster collaboration and integration across the project team and wider supply chain? (maximum 250 words)</label>
+														<textarea class="form-control" id="integration" name="integration" rows="3"></textarea>
+														<p class="right"><small id="integration" class="form-text text-muted">0/250</small></p>
+													</div>
+
+													<div class="form-group">
+														<label for="shared">2.	How has the benefits and performance of the digital transformation of your organisation been shared with 3rd parties? (maximum 250 words)</label>
+														<textarea class="form-control" id="shared" name="shared" rows="3"></textarea>
+														<p class="right"><small id="shared" class="form-text text-muted">0/250</small></p>
+													</div>
+
+													<div class="form-group">
+														<label for="transferability">3.	How might the digital transformation of your organisation be developed or applied for use elsewhere. What potential is there for transferability to other projects or organisations? (maximum 250 words)</label>
+														<textarea class="form-control" id="transferability" name="transferability" rows="3"></textarea>
+														<p class="right"><small id="transferability" class="form-text text-muted">0/250</small></p>
+													</div>
+
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<div class="row center-column">
+									<div class="col-md-3">
+										<button class="btn bg-transparent inner_prev">Back</button>
+										<button class="btn bg-transparent outer_prev">Back</button>
+									</div>
+									<div class="col-md-3">
+										<button class="btn green-pill btn-success inner_next">Next</button>
+										<button class="btn green-pill btn-success outer_next">Next</button>
+									</div>
+								</div>
+							</div>
+						</div>
+
+					</form>
+
+				</div>
+			</div>
+		</div>
+
+	</div>
+
+</div>
+	
+<!-- Template this out later -->
+<footer>
+	<div class="container">
+
+		<div class="row">
+
+			<div class="col-md-3">
+				<h5><a href="#">GET IN TOUCH</a></h5>
+
+				<div>
+					<p><a href="tel:0085231167217"><i class="fa fa-phone"></i> +852 3116 7217</a></p>
+				</div>
+
+				<div>
+					<p><a href="mailto:info@vtl-vtl.com"><i class="fa fa-envelope"></i> info@vtl-vtl.com</a></p>
+				</div>
+			</div>
+
+			<div class="col-md-3 col-md-offset-6">
+				<h5><a href="#">SUBSCRIBE TO OUR NEWS</a></h5>
+
+				<form id="footer-email" method="post" action="#">
+					<input type="text" placeholder="Your email" />
+					<input style="font-family: FontAwesome" value="&#xf138;" type="submit">
+				</form>
+			</div>
+
+		</div>
+		
+		<div class="row">
+
+			<div class="col-md-3">
+				<h6><a href="home.html">Home page</a></h6>
+			</div>
+
+			<div class="col-md-3">
+				<h6><a href="whats_new.html">What's New</a></h6>
+			</div>
+
+			<div class="col-md-3">
+				<h6><a href="judging_panel.html">Judging Panel</a></h6>
+			</div>
+
+			<div class="col-md-3">
+				<h6><a href="key_dates.html">Key Dates</a></h6>
+			</div>
+
+		</div>
+		
+		<div class="row">
+
+			<div class="col-md-3">
+				<h6><a href="about.html">About</a></h6>
+				<ul id="footer_about">
+					<li><a href="about.html#objective_s">Objectives</a></li>
+					<li><a href="about.html#organising_committee">Organising Committee</a></li>
+					<li><a href="about.html#technical_committee">Technical Committee</a></li>
+					<li><a href="about.html#winner_list">Winner List</a></li>
+					<li><a href="about.html#sponsor_s">Sponsors</a></li>
+					<li><a href="about.html#supporting_organizations">Supporting Organizations</a></li>
+				</ul>
+			</div>
+
+			<div class="col-md-3">
+				<h6><a href="gallery.html">Gallery</a></h6>
+			</div>
+
+			<div class="col-md-3">
+				<h6><a href="application.html">Application</a></h6>
+				<ul id="footer_application">
+					<li><a href="application.html#category_s">Categories</a></li>
+					<li><a href="application.html#eligibility">Eligibility</a></li>
+					<li><a href="application.html#judging_criteria">Judging Criteria</a></li>
+					<li><a href="application.html#assessment_process">Assessment process</a></li>
+					<li><a href="application.html#faq">FAQ</a></li>
+					<li><a href="application.html#application_form">Application Form of Organisation</a></li>
+					<li><a href="application.html#download">Download</a></li>
+					<li><a href="application.html#assessment_portal">Assessment Portal</a></li>
+				</ul>
+			</div>
+
+			<div class="col-md-3">
+				<h6><a href="contact.html">Contact us</a></h6>
+			</div>
+
+		</div>
+		
+		<hr>
+	
+		<div class="row">
+			<div class="col-md-8 col-sm-6 col-xs-12">
+				<p class="copyright-text">Copyright &copy; 2021 CIC Digitalisation Awards 2021.</p>
+				<p class="copyright-text">Created by <a href="#">VTL-Solutions Limited</a>.</p>
+			</div>
+
+			<div class="col-md-4 col-sm-6 col-xs-12">
+				<ul class="social-icons">
+					<li><a class="linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>  
+					<li><a class="google" href="#"><i class="fa fa-google-plus"></i></a></li>
+					<li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>
+					<li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
+					<li><a class="instagram" href="#"><i class="fa fa-instagram"></i></a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+	<button class="gototop"></button>
+
+</footer>
+
+<script src="scripts/scripts.js"></script>
+<script src="https://hammerjs.github.io/dist/hammer.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap-wizard/1.2/jquery.bootstrap.wizard.min.js"></script>
+
+</body>
+</html>

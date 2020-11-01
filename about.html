@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>About</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+	<script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+	<link rel="stylesheet" href="styles/bootstrap.vertical-tabs.css">
+
+	<link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+
+<!-- Template this out later -->
+<nav class="navbar navbar-light">
+	<div class="container-fluid">
+		<ul class="nav navbar-nav">
+			<li><a href="home.html"><img src="images/cic_logo_1.png"></a></li>
+			<li><a href="#"><img src="images/logo_CICAward_UPDATE.png"></a></li>
+			<li class="dropdown">
+				<a class="dropdown-toggle" data-toggle="dropdown" href="#">About<span class="caret"></span></a>
+				<ul class="dropdown-menu">
+					<li><a href="about.html#objective_s">Objectives</a></li>
+					<li><a href="about.html#organising_committee">Organising Committee</a></li>
+					<li><a href="about.html#technical_committee">Technical Committee</a></li>
+					<li><a href="about.html#winner_list">Winner List</a></li>
+					<li><a href="about.html#sponsor_s">Sponsors</a></li>
+					<li><a href="about.html#supporting_organizations">Supporting Organizations</a></li>
+				</ul>
+			</li>
+			<li><a href="whats_new.html">What's New</a></li>
+			<li><a href="gallery.html">Gallery</a></li>
+			<li><a href="judging_panel.html">Judging Panel</a></li>
+			<li class="dropdown">
+				<a class="dropdown-toggle" data-toggle="dropdown" href="#">Application<span class="caret"></span></a>
+				<ul class="dropdown-menu">
+					<li><a href="application.html#category_s">Categories</a></li>
+					<li><a href="application.html#eligibility">Eligibility</a></li>
+					<li><a href="application.html#judging_criteria">Judging Criteria</a></li>
+					<li><a href="application.html#assessment_process">Assessment Process</a></li>
+					<li><a href="application.html#faq">FAQ</a></li>
+					<li><a href="application.html#application_form">Application form of organisations</a></li>
+					<li><a href="application.html#download">Download</a></li>
+					<li><a href="application.html#assessment_portal">Assessment Portal</a></li>
+				</ul>
+			</li>
+			<li><a href="key_dates.html">Key Dates</a></li>
+			<li><a href="contact.html">Contact Us</a></li>
+			
+			<li>
+				<form id="search-icon" class="navbar-form" action="#">
+					<div class="input-group">
+						<div class="input-group-btn">
+							<button class="btn btn-default" type="submit">
+								<i class="glyphicon glyphicon-search"></i>
+							</button>
+						</div>
+					</div>
+				</form>
+				<form id="search-real" class="navbar-form" action="search.html">
+					<div class="input-group">
+						<input type="text" class="form-control" placeholder="Search">
+						<div class="input-group-btn">
+							<button class="btn btn-default" type="submit">
+								<i class="glyphicon glyphicon-search"></i>
+							</button>
+						</div>
+					</div>
+				</form>
+			</li>
+			
+			<li class="dropdown" id="lang-opts">
+				<a class="dropdown-toggle" id="lang-label" data-toggle="dropdown" href="#"></a>
+				<ul class="dropdown-menu">
+					<li><a href="#">EN</a></li>
+					<li><a href="#">华</a></li>
+					<li><a href="#">華</a></li>
+				</ul>
+			</li>
+		</ul>
+	</div>
+</nav>
+
+<div class="main">
+	<div class="section" id="about_banner">
+		<div class="container">
+			<h1>About</h1>
+		</div>
+	</div>
+
+	<div class="section" id="sponsor_banner">
+		<div class="container">
+			<h1>Sponsors</h1>
+		</div>
+	</div>
+
+	<div class="section" id="support_banner">
+		<div class="container">
+			<h1>Supporting Organisations</h1>
+		</div>
+	</div>
+
+	<div class="section" id="about_content">
+
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+
+					<div class="col-md-3">
+						<ul class="nav nav-tabs tabs-left">
+							<li class="active"><a href="#objective_s" data-toggle="tab">Objectives</a></li>
+							<li><a href="#organising_committee" data-toggle="tab">Organising Committee</a></li>
+							<li><a href="#technical_committee" data-toggle="tab">Technical Committee</a></li>
+							<li><a href="#winner_list" data-toggle="tab">Winner List</a></li>
+							<li><a href="#sponsor_s" data-toggle="tab">Sponsors</a></li>
+							<li><a href="#supporting_organizations" data-toggle="tab">Supporting Organizations</a></li>
+						</ul>
+					</div>
+
+					<div class="col-md-9">
+						<div class="tab-content">
+							<div class="tab-pane active" id="objective_s">
+								<div class="row">
+									<div class="col-md-6">
+										<div>
+											<h2>Objectives</h2>
+
+											<p>•	To recognise outstanding local projects and local organisations for their contribution in the promotion and adoption of digitalisation tools and workflows and in bringing about innovation in these areas to improve productivity, quality, sustainability and safety, with measurable KPIs; and</p>
+
+											<p>•	To collect the knowledge and experience of the digitalisation leaders and share with the industry through post-award seminars and workshops. </p>
+										</div>
+									</div>
+									<div class="col-md-6">
+										<div class="row">
+											<div class="col-md-12">
+												<img src="images/rectangle_125.png">
+											</div>
+										</div>
+
+										<div class="row">
+											<div class="col-md-12">
+												<img src="images/rectangle_126.png">
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="tab-pane" id="organising_committee">
+								<h2>Organising Committee</h2>
+
+								<h3>Chairperson</h3>
+								<ul id="chairpersons">
+									<li>Mr. Paul CHONG</li>
+								</ul>
+
+								<h3>Members</h3>
+								<ul id="members">
+									<li>Mr. Rex CHAN</li>
+									<li>Ms. Lotus CHOI</li>
+									<li>Mr. CHOW Luen-kiu</li>
+									<li>Mr. Thomas HUI</li>
+									<li>Mr. Stephen HO</li>
+									<li>Ms. Grace LAM</li>
+									<li>Ms. Eliza WONG</li>
+									<li>Dr. James WONG</li>
+									<li>Mr. Stephen YIM</li>
+									<li>Mr. YIM Yu-chau</li>
+								</ul>
+							</div>
+
+							<div class="tab-pane" id="technical_committee">
+								<h2>Technical Committee</h2>
+
+								<h3>Chairperson</h3>
+								<ul id="chairpersons">
+									<li>Prof.POON Chi-sun</li>
+								</ul>
+
+								<h3>Members</h3>
+								<ul id="members">
+									<li>Mr. Rex CHAN</li>
+									<li>Ms. Lotus CHOI</li>
+									<li>Mr. CHOW Luen-kiu</li>
+									<li>Mr. Thomas HUI</li>
+									<li>Mr. Stephen HO</li>
+									<li>Ms. Grace LAM</li>
+									<li>Ms. Eliza WONG</li>
+									<li>Dr. James WONG</li>
+									<li>Mr. Stephen YIM</li>
+									<li>Mr. YIM Yu-chau</li>
+									<li>Ms. Grace LAM</li>
+									<li>Ms. Eliza WONG</li>
+									<li>Mr. Stephen YIM</li>
+									<li>Mr. YIM Yu-chau</li>
+								</ul>
+							</div>
+
+							<div class="tab-pane" id="winner_list">
+								<div class="row">
+									<h2>Winner List</h2>
+									<h3>Organisations category</h3>
+								</div>
+
+								<div class="row category-leaders">
+									<h4>Client Category</h4>
+
+									<div class="col-md-4">
+										<div class="row award-item">
+											<div class="col left"></div>
+											<div class="col right">
+												<h5>1<sup>st</sup> Award</h5>
+												<p><b>Water supplies department department</b></p>
+												<p>Internet Advertising Trends You Won't Be Disappointed Internet Advertising</p>
+											</div>
+											<div class="medal1"></div>
+										</div>
+									</div>
+
+									<div class="col-md-4">
+										<div class="row award-item">
+											<div class="col left"></div>
+											<div class="col right">
+												<h5>2<sup>nd</sup> Award</h5>
+												<p><b>Water supplies department department</b></p>
+												<p>Internet Advertising Trends You Won't Be Disappointed Internet Advertising</p>
+											</div>
+											<div class="medal2"></div>
+										</div>
+									</div>
+
+									<div class="col-md-4">
+										<div class="row award-item">
+											<div class="col left"></div>
+											<div class="col right">
+												<h5>3<sup>rd</sup> Award</h5>
+												<p><b>Water supplies department department</b></p>
+												<p>Internet Advertising Trends You Won't Be Disappointed Internet Advertising</p>
+											</div>
+											<div class="medal3"></div>
+										</div>
+									</div>
+								</div>
+								
+								<div class="row category-leaders">
+									<h4>Consultant Category</h4>
+
+									<div class="col-md-4">
+										<div class="row award-item">
+											<div class="col left"></div>
+											<div class="col right">
+												<h5>1<sup>st</sup> Award</h5>
+												<p><b>Water supplies department department</b></p>
+												<p>Internet Advertising Trends You Won't Be Disappointed Internet Advertising</p>
+											</div>
+											<div class="medal1"></div>
+										</div>
+									</div>
+
+									<div class="col-md-4">
+										<div class="row award-item">
+											<div class="col left"></div>
+											<div class="col right">
+												<h5>2<sup>nd</sup> Award</h5>
+												<p><b>Water supplies department department</b></p>
+												<p>Internet Advertising Trends You Won't Be Disappointed Internet Advertising</p>
+											</div>
+											<div class="medal2"></div>
+										</div>
+									</div>
+
+									<div class="col-md-4">
+										<div class="row award-item">
+											<div class="col left"></div>
+											<div class="col right">
+												<h5>3<sup>rd</sup> Award</h5>
+												<p><b>Water supplies department department</b></p>
+												<p>Internet Advertising Trends You Won't Be Disappointed Internet Advertising</p>
+											</div>
+											<div class="medal3"></div>
+										</div>
+									</div>
+								</div>
+								
+								<div class="row category-leaders">
+									<h4>Contractor Category</h4>
+
+									<div class="col-md-4">
+										<div class="row award-item">
+											<div class="col left"></div>
+											<div class="col right">
+												<h5>1<sup>st</sup> Award</h5>
+												<p><b>Water supplies department department</b></p>
+												<p>Internet Advertising Trends You Won't Be Disappointed Internet Advertising</p>
+											</div>
+											<div class="medal1"></div>
+										</div>
+									</div>
+
+									<div class="col-md-4">
+										<div class="row award-item">
+											<div class="col left"></div>
+											<div class="col right">
+												<h5>2<sup>nd</sup> Award</h5>
+												<p><b>Water supplies department department</b></p>
+												<p>Internet Advertising Trends You Won't Be Disappointed Internet Advertising</p>
+											</div>
+											<div class="medal2"></div>
+										</div>
+									</div>
+
+									<div class="col-md-4">
+										<div class="row award-item">
+											<div class="col left"></div>
+											<div class="col right">
+												<h5>3<sup>rd</sup> Award</h5>
+												<p><b>Water supplies department department</b></p>
+												<p>Internet Advertising Trends You Won't Be Disappointed Internet Advertising</p>
+											</div>
+											<div class="medal3"></div>
+										</div>
+									</div>
+								</div>
+								
+								<div class="row category-leaders">
+									<h4>Training/research Institute</h4>
+
+									<div class="col-md-4">
+										<div class="row award-item">
+											<div class="col left"></div>
+											<div class="col right">
+												<h5>1<sup>st</sup> Award</h5>
+												<p><b>Water supplies department department</b></p>
+												<p>Internet Advertising Trends You Won't Be Disappointed Internet Advertising</p>
+											</div>
+											<div class="medal1"></div>
+										</div>
+									</div>
+
+									<div class="col-md-4">
+										<div class="row award-item">
+											<div class="col left"></div>
+											<div class="col right">
+												<h5>2<sup>nd</sup> Award</h5>
+												<p><b>Water supplies department department</b></p>
+												<p>Internet Advertising Trends You Won't Be Disappointed Internet Advertising</p>
+											</div>
+											<div class="medal2"></div>
+										</div>
+									</div>
+
+									<div class="col-md-4">
+										<div class="row award-item">
+											<div class="col left"></div>
+											<div class="col right">
+												<h5>3<sup>rd</sup> Award</h5>
+												<p><b>Water supplies department department</b></p>
+												<p>Internet Advertising Trends You Won't Be Disappointed Internet Advertising</p>
+											</div>
+											<div class="medal3"></div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="tab-pane" id="sponsor_s">
+								<div class="row">
+									<h2>Sponsors</h2>
+									<h3>Platinum Sponsors</h3>
+								</div>
+
+								<div class="row">
+									<div class="col-md-4">
+										<img src="images/01.png">
+									</div>
+									<div class="col-md-4">
+										<img src="images/02.png">
+									</div>
+									<div class="col-md-4">
+										<img src="images/03.png">
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-md-4">
+										<img src="images/04.png">
+									</div>
+									<div class="col-md-4">
+										<img src="images/05.png">
+									</div>
+									<div class="col-md-4">
+										<img src="images/06.png">
+									</div>
+								</div>
+
+								<div class="row">
+									<h3>Golden Sponsors</h3>
+								</div>
+
+								<div class="row">
+									<div class="col-md-4">
+										<img src="images/01.png">
+									</div>
+									<div class="col-md-4">
+										<img src="images/02.png">
+									</div>
+									<div class="col-md-4">
+										<img src="images/03.png">
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-md-4">
+										<img src="images/04.png">
+									</div>
+									<div class="col-md-4">
+										<img src="images/05.png">
+									</div>
+									<div class="col-md-4">
+										<img src="images/06.png">
+									</div>
+								</div>
+
+							</div>
+
+							<div class="tab-pane" id="supporting_organizations">
+								<div class="row">
+									<h2>Supporting Organizations</h2>
+								</div>
+
+								<div class="row">
+									<div class="col-md-4">
+										<img src="images/01.png">
+									</div>
+									<div class="col-md-4">
+										<img src="images/02.png">
+									</div>
+									<div class="col-md-4">
+										<img src="images/03.png">
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-md-4">
+										<img src="images/04.png">
+									</div>
+									<div class="col-md-4">
+										<img src="images/05.png">
+									</div>
+									<div class="col-md-4">
+										<img src="images/06.png">
+									</div>
+								</div>
+
+							</div>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+
+	</div>
+</div>
+	
+<!-- Template this out later -->
+<footer>
+	<div class="container">
+
+		<div class="row">
+
+			<div class="col-md-3">
+				<h5><a href="#">GET IN TOUCH</a></h5>
+
+				<div>
+					<p><a href="tel:0085231167217"><i class="fa fa-phone"></i> +852 3116 7217</a></p>
+				</div>
+
+				<div>
+					<p><a href="mailto:info@vtl-vtl.com"><i class="fa fa-envelope"></i> info@vtl-vtl.com</a></p>
+				</div>
+			</div>
+
+			<div class="col-md-3 col-md-offset-6">
+				<h5><a href="#">SUBSCRIBE TO OUR NEWS</a></h5>
+
+				<form id="footer-email" method="post" action="#">
+					<input type="text" placeholder="Your email" />
+					<input style="font-family: FontAwesome" value="&#xf138;" type="submit">
+				</form>
+			</div>
+
+		</div>
+		
+		<div class="row">
+
+			<div class="col-md-3">
+				<h6><a href="home.html">Home page</a></h6>
+			</div>
+
+			<div class="col-md-3">
+				<h6><a href="whats_new.html">What's New</a></h6>
+			</div>
+
+			<div class="col-md-3">
+				<h6><a href="judging_panel.html">Judging Panel</a></h6>
+			</div>
+
+			<div class="col-md-3">
+				<h6><a href="key_dates.html">Key Dates</a></h6>
+			</div>
+
+		</div>
+		
+		<div class="row">
+
+			<div class="col-md-3">
+				<h6><a href="about.html">About</a></h6>
+				<ul id="footer_about">
+					<li><a href="about.html#objective_s">Objectives</a></li>
+					<li><a href="about.html#organising_committee">Organising Committee</a></li>
+					<li><a href="about.html#technical_committee">Technical Committee</a></li>
+					<li><a href="about.html#winner_list">Winner List</a></li>
+					<li><a href="about.html#sponsor_s">Sponsors</a></li>
+					<li><a href="about.html#supporting_organizations">Supporting Organizations</a></li>
+				</ul>
+			</div>
+
+			<div class="col-md-3">
+				<h6><a href="gallery.html">Gallery</a></h6>
+			</div>
+
+			<div class="col-md-3">
+				<h6><a href="application.html">Application</a></h6>
+				<ul id="footer_application">
+					<li><a href="application.html#category_s">Categories</a></li>
+					<li><a href="application.html#eligibility">Eligibility</a></li>
+					<li><a href="application.html#judging_criteria">Judging Criteria</a></li>
+					<li><a href="application.html#assessment_process">Assessment process</a></li>
+					<li><a href="application.html#faq">FAQ</a></li>
+					<li><a href="application.html#application_form">Application Form of Organisation</a></li>
+					<li><a href="application.html#download">Download</a></li>
+					<li><a href="application.html#assessment_portal">Assessment Portal</a></li>
+				</ul>
+			</div>
+
+			<div class="col-md-3">
+				<h6><a href="contact.html">Contact us</a></h6>
+			</div>
+
+		</div>
+		
+		<hr>
+	
+		<div class="row">
+			<div class="col-md-8 col-sm-6 col-xs-12">
+				<p class="copyright-text">Copyright &copy; 2021 CIC Digitalisation Awards 2021.</p>
+				<p class="copyright-text">Created by <a href="#">VTL-Solutions Limited</a>.</p>
+			</div>
+
+			<div class="col-md-4 col-sm-6 col-xs-12">
+				<ul class="social-icons">
+					<li><a class="linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>  
+					<li><a class="google" href="#"><i class="fa fa-google-plus"></i></a></li>
+					<li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>
+					<li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
+					<li><a class="instagram" href="#"><i class="fa fa-instagram"></i></a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+	<button class="gototop"></button>
+
+</footer>
+
+<script src="scripts/scripts.js"></script>
+<script src="https://hammerjs.github.io/dist/hammer.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap-wizard/1.2/jquery.bootstrap.wizard.min.js"></script>
+
+</body>
+</html>

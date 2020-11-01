@@ -1,0 +1,789 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Application</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+	<script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+	<link rel="stylesheet" href="styles/bootstrap.vertical-tabs.css">
+
+	<link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+
+<!-- Template this out later -->
+<nav class="navbar navbar-light">
+	<div class="container-fluid">
+		<ul class="nav navbar-nav">
+			<li><a href="home.html"><img src="images/cic_logo_1.png"></a></li>
+			<li><a href="#"><img src="images/logo_CICAward_UPDATE.png"></a></li>
+			<li class="dropdown">
+				<a class="dropdown-toggle" data-toggle="dropdown" href="#">About<span class="caret"></span></a>
+				<ul class="dropdown-menu">
+					<li><a href="about.html#objective_s">Objectives</a></li>
+					<li><a href="about.html#organising_committee">Organising Committee</a></li>
+					<li><a href="about.html#technical_committee">Technical Committee</a></li>
+					<li><a href="about.html#winner_list">Winner List</a></li>
+					<li><a href="about.html#sponsor_s">Sponsors</a></li>
+					<li><a href="about.html#supporting_organizations">Supporting Organizations</a></li>
+				</ul>
+			</li>
+			<li><a href="whats_new.html">What's New</a></li>
+			<li><a href="gallery.html">Gallery</a></li>
+			<li><a href="judging_panel.html">Judging Panel</a></li>
+			<li class="dropdown">
+				<a class="dropdown-toggle" data-toggle="dropdown" href="#">Application<span class="caret"></span></a>
+				<ul class="dropdown-menu">
+					<li><a href="application.html#category_s">Categories</a></li>
+					<li><a href="application.html#eligibility">Eligibility</a></li>
+					<li><a href="application.html#judging_criteria">Judging Criteria</a></li>
+					<li><a href="application.html#assessment_process">Assessment Process</a></li>
+					<li><a href="application.html#faq">FAQ</a></li>
+					<li><a href="application.html#application_form">Application form of organisations</a></li>
+					<li><a href="application.html#download">Download</a></li>
+					<li><a href="application.html#assessment_portal">Assessment Portal</a></li>
+				</ul>
+			</li>
+			<li><a href="key_dates.html">Key Dates</a></li>
+			<li><a href="contact.html">Contact Us</a></li>
+			
+			<li>
+				<form id="search-icon" class="navbar-form" action="#">
+					<div class="input-group">
+						<div class="input-group-btn">
+							<button class="btn btn-default" type="submit">
+								<i class="glyphicon glyphicon-search"></i>
+							</button>
+						</div>
+					</div>
+				</form>
+				<form id="search-real" class="navbar-form" action="search.html">
+					<div class="input-group">
+						<input type="text" class="form-control" placeholder="Search">
+						<div class="input-group-btn">
+							<button class="btn btn-default" type="submit">
+								<i class="glyphicon glyphicon-search"></i>
+							</button>
+						</div>
+					</div>
+				</form>
+			</li>
+			
+			<li class="dropdown" id="lang-opts">
+				<a class="dropdown-toggle" id="lang-label" data-toggle="dropdown" href="#"></a>
+				<ul class="dropdown-menu">
+					<li><a href="#">EN</a></li>
+					<li><a href="#">华</a></li>
+					<li><a href="#">華</a></li>
+				</ul>
+			</li>
+		</ul>
+	</div>
+</nav>
+
+<div class="main">
+	<div class="section" id="application_banner">
+		<div class="container">
+			<h1>Application</h1>
+		</div>
+	</div>
+
+	<div class="section" id="application_content">
+
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+
+					<div class="col-md-3">
+						<ul class="nav nav-tabs tabs-left">
+							<li class="active"><a href="#category_s" data-toggle="tab">Categories</a></li>
+							<li><a href="#eligibility" data-toggle="tab">Eligibility</a></li>
+							<li><a href="#judging_criteria" data-toggle="tab">Judging Criteria</a></li>
+							<li><a href="#assessment_process" data-toggle="tab">Assessment Process</a></li>
+							<li><a href="#faq" data-toggle="tab">FAQ</a></li>
+							<li><a href="#application_form" data-toggle="tab">Application Form</a></li>
+							<li><a href="#download" data-toggle="tab">Download</a></li>
+							<li><a href="#assessment_portal" data-toggle="tab">Assessment Portal</a></li>
+						</ul>
+					</div>
+
+					<div class="col-md-9">
+						<div class="tab-content">
+							<div class="tab-pane active" id="category_s">
+								<div class="row">
+									<div class="col-md-12">
+										<h2>Award categories</h2>
+									</div>
+								</div>
+
+								<div class="row center-column">
+									<div class="col-md-5">
+										<div id="project">
+											<img src="images/icon_project_1.png">
+											<br>
+											<p>Project</p>
+										</div>
+									</div>
+								</div>
+
+								<div class="row center-column">
+									<div class="col-md-6">
+										<div id="project_text">
+											<p>A total of 10 awards, including Gold, Silver, <br>Bronze and Merit Award in Projects category</p>
+										</div>
+									</div>
+								</div>
+
+								<div class="row center-column">
+									<div class="col-md-3">
+										<div class="app_medal gold">
+											<p>Gold</p>
+											<p>HK$10,000</p>
+											<div class="medal_star"></div>
+										</div>
+									</div>
+
+									<div class="col-md-3">
+										<div class="app_medal silver">
+											<p>Silver</p>
+											<p>HK$6,000</p>
+											<div class="medal_star"></div>
+										</div>
+									</div>
+
+									<div class="col-md-3">
+										<div class="app_medal bronze"> 
+											<p>Bronze</p>
+											<p>HK$3,000</p>
+											<div class="medal_star"></div>
+										</div>
+									</div>
+								</div>
+
+								<div class="row center-column">
+									<div class="col-md-5">
+										<div id="organisation">
+											<img src="images/icon_organisation_1.png">
+											<br>
+											<p>Organisation</p>
+										</div>
+									</div>
+								</div>
+
+								<div class="row center-column">
+									<div class="col-md-6">
+										<div id="organisation_text">
+											<p>A Gold, Silver and Bronze in each sub-category</p>
+										</div>
+									</div>
+								</div>
+
+								<div class="row center-column">
+									<div class="col-md-3">
+										<div class="app_medal gold">
+											<p>Gold</p>
+											<p>HK$10,000</p>
+											<div class="medal_star"></div>
+										</div>
+									</div>
+
+									<div class="col-md-3">
+										<div class="app_medal silver">
+											<p>Silver</p>
+											<p>HK$6,000</p>
+											<div class="medal_star"></div>
+										</div>
+									</div>
+
+									<div class="col-md-3">
+										<div class="app_medal bronze"> 
+											<p>Bronze</p>
+											<p>HK$3,000</p>
+											<div class="medal_star"></div>
+										</div>
+									</div>
+								</div>
+
+								<div class="row center-column spaced">
+									<div class="col-md-3">
+										<div class="app_box">
+											<img src="images/icon_client_1.png">
+											<br>
+											<p>Client</p>
+											<br>
+											<p class="normal-content">(includes Government, Public Clients and Developers)</p>
+										</div>
+									</div>
+									<div class="col-md-3">
+										<div class="app_box">
+											<img src="images/icon_consultant_1.png">
+											<br>
+											<p>Consultant</p>
+										</div>
+									</div>
+									<div class="col-md-3">
+										<div class="app_box">
+											<img src="images/contractor.png">
+											<br>
+											<p>Contractor</p>
+										</div>
+									</div>
+								</div>
+
+								<div class="row center-column spaced">
+									<div class="col-md-3">
+										<div class="app_box">
+											<img src="images/start-up_1.png">
+											<br>
+											<p>Start up Company</p>
+										</div>
+									</div>
+									<div class="col-md-3">
+										<div class="app_box">
+											<img src="images/SME_1.png">
+											<br>
+											<p>SME</p>
+										</div>
+									</div>
+									<div class="col-md-3">
+										<div class="app_box">
+											<img src="images/icon_traning_research_1.png">
+											<br>
+											<p>Training / Research Institute</p>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="tab-pane" id="eligibility">
+								<div class="row">
+									<div class="col-md-12">
+										<h2>Eligibility</h2>
+
+										<ul>
+											<li>Local Organisation shall be registered in Hong Kong under the Companies Ordinance.</li>
+											<li>Start-up Organisation shall be registered in Hong Kong under the Companies Ordinance for not more than three years as of the date of the application deadline.</li>
+											<li>Applicants in Organisation category shall submit their Business Registration for validation.</li>
+											<li>
+												The participating company must have been operating for at least three years and meet at least one of the following requirements to enter SME category: 
+												<ul>
+													<li>An annual turnover less than or equal to HK$100 million</li>
+													<li>Total assets of less than or equal to HK$100 million</li>
+													<li>Number of employees is less than or equal to 100</li>
+												</ul>
+											</li>
+											<li>Applicants under SME category shall complete a self declaration form to meet the above requirements and information should be available to support the declaration upon request by the Organiser.</li>
+											<li>Local Project shall be regarded as a project with its site located within Hong Kong and with its construction works (including but not limited to the reclamation, site formation, foundation, superstructure, other structural works, E&M works, etc., but excluding site establishment works) commenced on site before 30 June 2021.</li>
+											<li>Only the main applicant can submit a Project for competition under Project Category. Co-applicants contributing on the same Project can be included in the same application.</li>
+											<li>Projects with the same project location or contract number within the same construction period are identified as the same project.</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+
+							<div class="tab-pane" id="judging_criteria">
+								<div class="row">
+									<div class="col-md-12">
+										<h2>Judging Criteria</h2>
+										<h3>Judging Criteria for Project</h3>
+									</div>
+								</div>
+
+								<div class="row same-height-col">
+									<div class="col-md-6">
+										<div class="row title">
+											<div class="col left">
+												<img src="images/Group334.png" />
+											</div>
+											<div class="col right">
+												<h4>Technical Execution & Benefit Realisation (40%)</h4>
+											</div>
+										</div>
+										<div class="row content">Demonstrate how the implemented digital technologies have been selected and how they have benefited the specific design and construction process(s) or task(s) with tangible measures in term of enhancement in productivity, safety, sustainability, quality, time, cost, etc.</div>
+									</div>
+
+									<div class="col-md-6">
+										<div class="row title">
+											<div class="col left">
+												<img src="images/XMLID206.png" />
+											</div>
+											<div class="col right">
+												<h4>Strategy, Planning & Leadership (30%)</h4>
+											</div>
+										</div>
+										<div class="row content">Elaborate how the project teams have set strategies to plan, develop and engaged to implement the digital technologies in the project.</div>
+									</div>
+								</div>
+
+								<div class="row same-height-col">
+									<div class="col-md-6">
+										<div class="row title">
+											<div class="col left">
+												<img src="images/XMLID128.png" />
+											</div>
+											<div class="col right">
+												<h4>Innovation & Process Streamlining (20%)</h4>
+											</div>
+										</div>
+										<div class="row content">Illustrate what innovation has been introduced In the project and how the project team have streamlined the design and construction processes and improved the efficiency of the overall project execution.</div>
+									</div>
+
+									<div class="col-md-6">
+										<div class="row title">
+											<div class="col left">
+												<img src="images/ESG.png" />
+											</div>
+											<div class="col right">
+												<h4>ESG Impact (10%)</h4>
+											</div>
+										</div>
+										<div class="row content">Elaborate the ESG factors that have been considered by the project team in implementing the project and the contributions made by the digital technologies adopted.  Sharing of innovative digital solutions with industry.</div>
+									</div>
+								</div>
+
+								<div class="row">
+									<div class="col-md-12">
+										<h3>Judging Criteria for Organisation</h3>
+									</div>
+								</div>
+
+								<div class="row same-height-col">
+									<div class="col-md-6">
+										<div class="row title">
+											<div class="col left">
+												<img src="images/Group334.png" />
+											</div>
+											<div class="col right">
+												<h4>Technical Execution & Benefit Realisation (40%)</h4>
+											</div>
+										</div>
+										<div class="row content">Demonstrate how the implemented digital technologies have been selected and how they have benefited the specific design and construction process(s) or task(s) with tangible measures in term of enhancement in productivity, safety, sustainability, quality, time, cost, etc.</div>
+									</div>
+
+									<div class="col-md-6">
+										<div class="row title">
+											<div class="col left">
+												<img src="images/XMLID206.png" />
+											</div>
+											<div class="col right">
+												<h4>Strategy, Planning & Leadership (30%)</h4>
+											</div>
+										</div>
+										<div class="row content">Elaborate how the project teams have set strategies to plan, develop and engaged to implement the digital technologies in the project.</div>
+									</div>
+								</div>
+
+								<div class="row same-height-col">
+									<div class="col-md-6">
+										<div class="row title">
+											<div class="col left">
+												<img src="images/XMLID128.png" />
+											</div>
+											<div class="col right">
+												<h4>Innovation & Process Streamlining (20%)</h4>
+											</div>
+										</div>
+										<div class="row content">Illustrate what innovation has been introduced In the project and how the project team have streamlined the design and construction processes and improved the efficiency of the overall project execution.</div>
+									</div>
+
+									<div class="col-md-6">
+										<div class="row title">
+											<div class="col left">
+												<img src="images/ESG.png" />
+											</div>
+											<div class="col right">
+												<h4>ESG Impact (10%)</h4>
+											</div>
+										</div>
+										<div class="row content">Elaborate the ESG factors that have been considered by the project team in implementing the project and the contributions made by the digital technologies adopted.  Sharing of innovative digital solutions with industry.</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="tab-pane" id="assessment_process">
+								<div class="row">
+									<h2>Assessment Process</h2>
+								</div>
+
+								<div class="row">
+									<div class="col-md-4">
+										<div class="row line-back">
+											<img src="images/evaluation1.png">
+										</div>
+										<div class="row">
+											<h4>Initial Assessment</h4>
+										</div>
+										<div class="row">
+											<p>Fill in the application form with supporting documents</p>
+										</div>
+									</div>
+
+									<div class="col-md-4">
+										<div class="row line-back">
+											<img src="images/evaluation1.png">
+										</div>
+										<div class="row">
+											<h4>Initial Assessment</h4>
+										</div>
+										<div class="row">
+											<p>Fill in the application form with supporting documents</p>
+										</div>
+									</div>
+
+									<div class="col-md-4">
+										<div class="row line-back">
+											<img src="images/evaluation1.png">
+										</div>
+										<div class="row">
+											<h4>Initial Assessment</h4>
+										</div>
+										<div class="row">
+											<p>Fill in the application form with supporting documents</p>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="tab-pane" id="faq">
+								<div class="row">
+									<div class="col-md-12">
+										<h2>FAQ</h2>
+									</div>
+								</div>
+
+								<div class="row">
+									<div class="col-md-12">
+										<div id="intro">I have been questioned by many people to disclose some of the greatest traffic generating techniques that I know of. I am not to immediate to reveal them because I know the majority doesn’t even take battle on them. All I know is that they work and you should be familiar</div>
+									</div>
+								</div>
+
+								<div class="panel-group" id="accordion">
+									<div class="panel">
+										<div class="panel-heading">
+											<h4 class="panel-title">
+												<a data-toggle="collapse" data-parent="#accordion" href="#collapse1">Understanding Colors</a>
+											</h4>
+										</div>
+										<div id="collapse1" class="panel-collapse collapse in">
+											<div class="panel-body">Differentiate and you stand out in a crowded marketplace. Present your uniqueness and emphasize your rare attributes in your sales copy and promotions and you’ll capture the imagination and interest of those you want to reach. In a world of copycats, it pays to be an original. It’s usually the creator of a new concept who gets the most mileage from it. Innovative entrepreneurs often become market leaders while competitors keep doing things the same old way – until change is forced upon them. Differentiate or die. Challenging the way things have always been done can lead to creative new options that reward you with a windfall of profits. Differentiate your business and you attract attention. It’s new, different – even revolutionary – </div>
+										</div>
+									</div>
+									<div class="panel">
+										<div class="panel-heading">
+											<h4 class="panel-title">
+											<a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapse2">Internet Banner Advertising Most Reliable Forms Of Web Advertising</a>
+											</h4>
+										</div>
+										<div id="collapse2" class="panel-collapse collapse">
+											<div class="panel-body">Differentiate and you stand out in a crowded marketplace. Present your uniqueness and emphasize your rare attributes in your sales copy and promotions and you’ll capture the imagination and interest of those you want to reach. In a world of copycats, it pays to be an original. It’s usually the creator of a new concept who gets the most mileage from it. Innovative entrepreneurs often become market leaders while competitors keep doing things the same old way – until change is forced upon them. Differentiate or die. Challenging the way things have always been done can lead to creative new options that reward you with a windfall of profits. Differentiate your business and you attract attention. It’s new, different – even revolutionary – </div>
+										</div>
+									</div>
+									<div class="panel">
+										<div class="panel-heading">
+											<h4 class="panel-title">
+											<a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapse3">Low Cost Advertising</a>
+											</h4>
+										</div>
+										<div id="collapse3" class="panel-collapse collapse">
+											<div class="panel-body">Differentiate and you stand out in a crowded marketplace. Present your uniqueness and emphasize your rare attributes in your sales copy and promotions and you’ll capture the imagination and interest of those you want to reach. In a world of copycats, it pays to be an original. It’s usually the creator of a new concept who gets the most mileage from it. Innovative entrepreneurs often become market leaders while competitors keep doing things the same old way – until change is forced upon them. Differentiate or die. Challenging the way things have always been done can lead to creative new options that reward you with a windfall of profits. Differentiate your business and you attract attention. It’s new, different – even revolutionary – </div>
+										</div>
+									</div>
+									<div class="panel">
+										<div class="panel-heading">
+											<h4 class="panel-title">
+											<a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapse4">Promote With Postcards</a>
+											</h4>
+										</div>
+										<div id="collapse4" class="panel-collapse collapse">
+											<div class="panel-body">Differentiate and you stand out in a crowded marketplace. Present your uniqueness and emphasize your rare attributes in your sales copy and promotions and you’ll capture the imagination and interest of those you want to reach. In a world of copycats, it pays to be an original. It’s usually the creator of a new concept who gets the most mileage from it. Innovative entrepreneurs often become market leaders while competitors keep doing things the same old way – until change is forced upon them. Differentiate or die. Challenging the way things have always been done can lead to creative new options that reward you with a windfall of profits. Differentiate your business and you attract attention. It’s new, different – even revolutionary – </div>
+										</div>
+									</div>
+									<div class="panel">
+										<div class="panel-heading">
+											<h4 class="panel-title">
+											<a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapse5">Get Best Advertiser In Your Side Pocket</a>
+											</h4>
+										</div>
+										<div id="collapse5" class="panel-collapse collapse">
+											<div class="panel-body">Differentiate and you stand out in a crowded marketplace. Present your uniqueness and emphasize your rare attributes in your sales copy and promotions and you’ll capture the imagination and interest of those you want to reach. In a world of copycats, it pays to be an original. It’s usually the creator of a new concept who gets the most mileage from it. Innovative entrepreneurs often become market leaders while competitors keep doing things the same old way – until change is forced upon them. Differentiate or die. Challenging the way things have always been done can lead to creative new options that reward you with a windfall of profits. Differentiate your business and you attract attention. It’s new, different – even revolutionary – </div>
+										</div>
+									</div>
+									<div class="panel">
+										<div class="panel-heading">
+											<h4 class="panel-title">
+											<a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapse6">Decorate For Less With Art Posters</a>
+											</h4>
+										</div>
+										<div id="collapse6" class="panel-collapse collapse">
+											<div class="panel-body">Differentiate and you stand out in a crowded marketplace. Present your uniqueness and emphasize your rare attributes in your sales copy and promotions and you’ll capture the imagination and interest of those you want to reach. In a world of copycats, it pays to be an original. It’s usually the creator of a new concept who gets the most mileage from it. Innovative entrepreneurs often become market leaders while competitors keep doing things the same old way – until change is forced upon them. Differentiate or die. Challenging the way things have always been done can lead to creative new options that reward you with a windfall of profits. Differentiate your business and you attract attention. It’s new, different – even revolutionary – </div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="tab-pane" id="application_form">
+								<div class="row">
+									<div class="col-md-12">
+										<h2>Application Form</h2>
+									</div>
+								</div>
+
+								<div class="row center-content">
+									<div class="col-md-4">
+										<a class="btn green-pill btn-success inverse" href="#">Download Form</a>
+									</div>
+									<div class="col-md-4">
+										<a class="btn green-pill btn-success" href="application_form.html">Apply Online</a>
+									</div>
+								</div>
+
+								<div class="row">
+									<div class="col-md-12">
+										<p><b>Please remember that:</b></p>
+										<ol>
+											<li><span>Information exceeded the specified word count limits will not be taken into consideration.</span></li>
+											<li><span>Charts and photos should be embedded in the word document where possible (captions are not part of the word count). Total submission length - maximum 15 pages.</span></li>
+											<li><span>Appendices will not be reviewed as part of the submission.</span></li>
+										</ol>
+									</div>
+								</div>
+
+								<div class="row">
+									<div class="col-md-12">
+										<h3>Category Description</h3>
+
+										<p>The Digital Transformation Project of the Year Award will recognise the importance of digitalisation within the construction industry and honours the achievements of project teams that have successfully digitalised one or multiple areas of their business through the application of digital and disruptive technologies.</p>
+
+										<p>This category focuses on how digital tools have been successfully implemented on a specific project or within an organisation to optimise a specific construction process or task. At minimum, entries should demonstrate the collection and conversion of non-digital information into digital data, through to full-scale automation that removes all manual input in a process. It can include implementation of software, CDE, IoT, RFID tagging, Robotic Process Automation (RPA), mixed reality, or laser scanning etc.</p>
+
+										<p>Benefit realisation carries 50% of the score therefore please provide detailed descriptions of all tangible benefits demonstrated by the digital implementation such as time, efficiency, safety, quality, cost, etc., along with evidence to support this.</p>
+
+										<p>The exemplar winner will show judges how they have:</p>
+										<ol>
+											<li><span>Defined the challenge, identified possible solutions and secured agreement from key stakeholders.</span></li>
+											<li><span>Focused their outcomes on constructor needs and user or occupier benefits, leading to more work on subsequent projects.</span></li>
+											<li><span>Been able to demonstrate improvements compared to previous or 3rd party performance through objective measurement data, such as KPIs.</span></li>
+											<li><span>Created a solution that can be used or applied elsewhere in their organisation or their industry sector.</span></li>
+											<li><span>Taken the lessons learned and the new best practice benchmark to the industry and shared them so others can benefit.</span></li>
+										</ol>
+									</div>
+								</div>
+
+								<div class="row">
+									<div class="col-md-12">
+										<h3>Entry Requirements</h3>
+
+										<ul>
+											<li><span>This award is open to all Hong Kong projects, including upstream, mid-stream or downstream, that have successfully incorporated/ implemented digitalisation that is innovative, value enhancing and has a noteworthy return on investment.</span></li>
+											<li><span>The initiative (or a significant milestone of the initiative) should be 100% adopted and operational (i.e. not a trial) and should have been implemented within the last 18 months (from November 2020).</span></li>
+											<li><span>The project itself does not have to be complete. What is required is evidence that the project is tackling the specific initiative in a new and innovative way and that its positive impact can be measured or quantified.</span></li>
+										</ul>
+									</div>
+								</div>
+							</div>
+
+							<div class="tab-pane" id="download">
+								<div class="row">
+									<div class="col-md-12">
+										<h2>Download</h2>
+									</div>
+								</div>
+
+								<div class="row">
+									<div class="col-md-12">
+										<p>Hella narwhal Cosby sweater McSweeney's, salvia kitsch sold out High Life.</p>
+									</div>
+								</div>
+
+								<div class="row">
+									<div class="col-md-4">
+										<a class="btn green-pill btn-success" href="#">Nomination Kit</a>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-md-4">
+										<a class="btn green-pill btn-success" href="application_form.html">Application Form</a>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-md-4">
+										<a class="btn green-pill btn-success" href="#">Poster</a>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-md-4">
+										<a class="btn green-pill btn-success" href="#">Banner</a>
+									</div>
+								</div>
+							</div>
+
+							<div class="tab-pane" id="assessment_portal">
+								<div class="row">
+									<div class="col-md-12">
+										<h2>Assessment Portal</h2>
+									</div>
+								</div>
+
+								<div class="row">
+									<div class="col-md-12">
+										<p>Hella narwhal Cosby sweater McSweeney's, salvia kitsch sold out High Life.</p>
+									</div>
+								</div>
+
+								<div class="row center-content">
+									<div class="col-md-6">
+										<form action="#" method="POST">
+											<div class="form-group">
+												<label for="user">User:</label>
+												<input type="text" name="user" class="form-control">
+											</div>
+											<div class="form-group">
+												<label for="password">Password:</label>
+												<input type="password" name="password" class="form-control">
+											</div>
+
+											<div class="form-group center-button">
+												<input class="btn green-pill btn-success" type="submit" value="Log in">
+											</div>
+										</form> 
+									</div>
+								</div>
+							</div>
+
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+
+	</div>
+</div>
+	
+<!-- Template this out later -->
+<footer>
+	<div class="container">
+
+		<div class="row">
+
+			<div class="col-md-3">
+				<h5><a href="#">GET IN TOUCH</a></h5>
+
+				<div>
+					<p><a href="tel:0085231167217"><i class="fa fa-phone"></i> +852 3116 7217</a></p>
+				</div>
+
+				<div>
+					<p><a href="mailto:info@vtl-vtl.com"><i class="fa fa-envelope"></i> info@vtl-vtl.com</a></p>
+				</div>
+			</div>
+
+			<div class="col-md-3 col-md-offset-6">
+				<h5><a href="#">SUBSCRIBE TO OUR NEWS</a></h5>
+
+				<form id="footer-email" method="post" action="#">
+					<input type="text" placeholder="Your email" />
+					<input style="font-family: FontAwesome" value="&#xf138;" type="submit">
+				</form>
+			</div>
+
+		</div>
+		
+		<div class="row">
+
+			<div class="col-md-3">
+				<h6><a href="home.html">Home page</a></h6>
+			</div>
+
+			<div class="col-md-3">
+				<h6><a href="whats_new.html">What's New</a></h6>
+			</div>
+
+			<div class="col-md-3">
+				<h6><a href="judging_panel.html">Judging Panel</a></h6>
+			</div>
+
+			<div class="col-md-3">
+				<h6><a href="key_dates.html">Key Dates</a></h6>
+			</div>
+
+		</div>
+		
+		<div class="row">
+
+			<div class="col-md-3">
+				<h6><a href="about.html">About</a></h6>
+				<ul id="footer_about">
+					<li><a href="about.html#objective_s">Objectives</a></li>
+					<li><a href="about.html#organising_committee">Organising Committee</a></li>
+					<li><a href="about.html#technical_committee">Technical Committee</a></li>
+					<li><a href="about.html#winner_list">Winner List</a></li>
+					<li><a href="about.html#sponsor_s">Sponsors</a></li>
+					<li><a href="about.html#supporting_organizations">Supporting Organizations</a></li>
+				</ul>
+			</div>
+
+			<div class="col-md-3">
+				<h6><a href="gallery.html">Gallery</a></h6>
+			</div>
+
+			<div class="col-md-3">
+				<h6><a href="application.html">Application</a></h6>
+				<ul id="footer_application">
+					<li><a href="application.html#category_s">Categories</a></li>
+					<li><a href="application.html#eligibility">Eligibility</a></li>
+					<li><a href="application.html#judging_criteria">Judging Criteria</a></li>
+					<li><a href="application.html#assessment_process">Assessment process</a></li>
+					<li><a href="application.html#faq">FAQ</a></li>
+					<li><a href="application.html#application_form">Application Form of Organisation</a></li>
+					<li><a href="application.html#download">Download</a></li>
+					<li><a href="application.html#assessment_portal">Assessment Portal</a></li>
+				</ul>
+			</div>
+
+			<div class="col-md-3">
+				<h6><a href="contact.html">Contact us</a></h6>
+			</div>
+
+		</div>
+		
+		<hr>
+	
+		<div class="row">
+			<div class="col-md-8 col-sm-6 col-xs-12">
+				<p class="copyright-text">Copyright &copy; 2021 CIC Digitalisation Awards 2021.</p>
+				<p class="copyright-text">Created by <a href="#">VTL-Solutions Limited</a>.</p>
+			</div>
+
+			<div class="col-md-4 col-sm-6 col-xs-12">
+				<ul class="social-icons">
+					<li><a class="linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>  
+					<li><a class="google" href="#"><i class="fa fa-google-plus"></i></a></li>
+					<li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>
+					<li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
+					<li><a class="instagram" href="#"><i class="fa fa-instagram"></i></a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+	<button class="gototop"></button>
+
+</footer>
+
+<script src="scripts/scripts.js"></script>
+<script src="https://hammerjs.github.io/dist/hammer.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap-wizard/1.2/jquery.bootstrap.wizard.min.js"></script>
+
+</body>
+</html>
